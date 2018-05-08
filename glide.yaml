@@ -1,0 +1,60 @@
+package: jiufu-api
+import:
+- package: github.com/docker/libkv
+  version: v0.2.1
+  subpackages:
+  - store
+  - store/zookeeper
+- package: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- package: github.com/gin-gonic/gin
+  version: v1.2
+  subpackages:
+  - binding
+  - json
+  - render
+- package: github.com/go-redis/redis
+  version: v6.6.1
+  subpackages:
+  - internal
+  - internal/consistenthash
+  - internal/hashtag
+  - internal/pool
+  - internal/proto
+- package: github.com/go-sql-driver/mysql
+  version: v1.3
+- package: github.com/aliyun/aliyun-oss-go-sdk
+  version: 1.8.0
+- package: github.com/golang/protobuf
+  version: v1.0.0
+  subpackages:
+  - proto
+- package: github.com/json-iterator/go
+  version: 1.0.0
+- package: github.com/mattn/go-isatty
+  version: v0.0.2
+- package: github.com/samuel/go-zookeeper
+  version: e6b59f6144beb8570562539c1898a0b1fea34b41
+  subpackages:
+  - zk
+- package: github.com/sirupsen/logrus
+  version: 1.0.3
+- package: github.com/Sirupsen/logrus
+  repo: https://github.com/sirupsen/logrus.git
+  version: 1.0.3
+- package: github.com/ugorji/go
+  version: f76f59a92f8224c695c0e2c401b9ad17e820a8f5
+  subpackages:
+  - codec
+- package: golang.org/x/crypto/ssh/terminal
+  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
+- package: golang.org/x/sys/unix
+  version: 43eea11bc92608addb41b8a406b0407495c106f6
+- package: gopkg.in/go-playground/validator.v8
+  version: v8
+- package: gopkg.in/yaml.v2
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
+- package: github.com/lib/pq
+  version: 017e4c14d80628353eaee677a1aeffe47a10c0dc
+  subpackages:
+  - old
