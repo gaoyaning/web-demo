@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"web-demo/log"
 	"github.com/sirupsen/logrus"
+	"time"
 )
 
 func main() {
@@ -21,6 +22,7 @@ func main() {
 	middleware.SetMiddleWare(r)
 	addr := fmt.Sprintf(":%d", config.C.Port)
 	logrus.Info(config.C)
+	logrus.Info(time.Now().Format("2006-01-02"))
 	r.Run(addr)
 }
 

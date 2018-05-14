@@ -7,22 +7,7 @@ import (
 )
 
 func SetMiddleWare(engine * gin.Engine) {
-	//engine.Use(myLog())
 	engine.Use(logFilter())
-}
-
-func myLog() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		traceID := c.GetHeader("X-Trace-Id")
-
-		fields := map[string]interface{}{
-			"requestStartTimeKey": time.Now(),
-			"traceIDKey":          traceID,
-			"queryPathKey":        c.Request.URL.Path,
-		}
-		c.Set("ginContextLogKey", logrus.WithFields(fields))
-		c.Next()
-	}
 }
 
 func  logFilter() gin.HandlerFunc {
