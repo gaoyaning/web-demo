@@ -103,8 +103,6 @@ func setDailyRollLog(path, fileName string, setOutput func(w io.Writer)) {
 
 func (hook *errorLogHook) Levels() []logrus.Level {
 	return []logrus.Level{
-		logrus.DebugLevel,
-		logrus.InfoLevel,
 		logrus.WarnLevel,
 		logrus.ErrorLevel,
 		logrus.FatalLevel,
