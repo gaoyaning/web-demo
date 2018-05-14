@@ -6,7 +6,8 @@ import (
 	"web-demo/route"
 	"web-demo/config"
 	"fmt"
-	"web-demo/log"
+	"web-demo/util/log"
+	_ "web-demo/util/zk"
 )
 
 func main() {

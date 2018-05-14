@@ -2,13 +2,13 @@ port: 2500
 appName: wukong-gateway
 log:
   level: info # debug/info
-  redisThreshold: 20  # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 redis 操作
-  mysqlThreshold: 100 # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 mysql 操作
+  redisThreshold: 20  # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 zkRedis 操作
+  mysqlThreshold: 100 # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 zkMysql 操作
   httpThreshold:  100 # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 http 操作
 zk:
   servers: 127.0.0.1:2181
   mysql:
-    key: Dba/mysql/prc/online/ofo_wukong/connection_1
+    key: Dba/zkMysql/prc/online/ofo_wukong/connection_1
     cluster: wukong
     connTimeout: 3000  # ms，默认30000
     readTimeout: 3000  # ms，默认30000

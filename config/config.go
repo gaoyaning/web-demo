@@ -24,7 +24,7 @@ type mysql struct {
 
 type zk struct {
 	Servers	string	`yml:servers`
-	Mysql	mysql	`yml:"mysql"`
+	Mysql	mysql	`yml:"zkMysql"`
 }
 
 var C = struct {

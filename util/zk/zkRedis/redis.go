@@ -1,0 +1,5 @@
+package zkRedis
+
+func Init()  {
+
+}
