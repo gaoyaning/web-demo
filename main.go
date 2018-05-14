@@ -7,8 +7,6 @@ import (
 	"web-demo/config"
 	"fmt"
 	"web-demo/log"
-	"github.com/sirupsen/logrus"
-	"time"
 )
 
 func main() {
