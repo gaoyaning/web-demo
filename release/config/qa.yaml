@@ -1,5 +1,5 @@
-port: 2500
-appName: wukong-gateway
+port: 7788
+appName: web-demo
 log:
   level: info # debug/info
   redisThreshold: 20  # ms 大于等于此值时在 monitor 日志中记录，设置为0会记录所有 zkRedis 操作
@@ -8,8 +8,8 @@ log:
 zk:
   servers: 127.0.0.1:2181
   mysql:
-    key: Dba/zkMysql/prc/online/ofo_wukong/connection_1
-    cluster: wukong
+    key: Dba/zkMysql/prc/online/web-demo/connection
+    cluster: web-demo
     connTimeout: 3000  # ms，默认30000
     readTimeout: 3000  # ms，默认30000
     writeTimeout: 3000 # ms，默认30000
