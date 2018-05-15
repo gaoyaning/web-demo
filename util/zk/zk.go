@@ -7,8 +7,6 @@ import (
 	"github.com/docker/libkv/store/zookeeper"
 	"web-demo/config"
 	"strings"
-	"web-demo/util/zk/zkMysql"
-	"web-demo/util/zk/zkRedis"
 )
 
 var ZK store.Store
@@ -27,7 +25,4 @@ func init() {
 		logrus.Fatalln("connect zookeeper %s failed", serverList, err)
 	}
 	logrus.Infof("connect zookeeper %s success", serverList)
-
-	zkMysql.Init()
-	zkRedis.Init()
 }

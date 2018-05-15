@@ -6,7 +6,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-func Init() {
+func init() {
 	zkMysqlKey := config.C.Zk.Mysql.Key
 	if isExist, err := zk.ZK.Exists(zkMysqlKey); !isExist || nil != err {
 		logrus.Fatalf("can not find mysql node: %s or check failed error: %v", zkMysqlKey, err)

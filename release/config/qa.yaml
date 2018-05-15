@@ -8,7 +8,7 @@ log:
 zk:
   servers: 127.0.0.1:2181
   mysql:
-    key: Dba/zkMysql/prc/online/web-demo/connection
+    key: dba/mysql
     cluster: web-demo
     connTimeout: 3000  # ms，默认30000
     readTimeout: 3000  # ms，默认30000

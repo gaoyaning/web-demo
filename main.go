@@ -7,7 +7,7 @@ import (
 	"web-demo/config"
 	"fmt"
 	"web-demo/util/log"
-	_ "web-demo/util/zk"
+	_ "web-demo/util/zk/zkMysql"
 )
 
 func main() {
