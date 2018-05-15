@@ -23,7 +23,7 @@ func init() {
 		select {
 		case pair := <-events:
 			// Do something with events
-			logrus.Infof("value changed on key %v: new value=%v", zkMysqlKey, pair.Value)
+			logrus.Infof("value changed on key %v: new value=%s", zkMysqlKey, string(pair.Value))
 		}
 	}
 }
